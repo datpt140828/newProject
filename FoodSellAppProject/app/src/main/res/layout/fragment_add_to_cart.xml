@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/addToCartFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fbfafa"
+        tools:context=".ui.home.AddToCartFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvYouCanLike"
+            android:layout_width="351dp"
+            android:layout_height="299dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="134dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:text="Mô tả"
+            android:textAlignment="viewStart"
+            android:textColor="#040404"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tvNameOfFood1"
+            app:layout_constraintTop_toBottomOf="@+id/tvNameOfFood1" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="193dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="40dp"
+            android:text="Có thể bạn thích"
+            android:textAlignment="viewStart"
+            android:textColor="#040404"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tvDescription"
+            app:layout_constraintTop_toBottomOf="@id/tvBtnAddToCart" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="193dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="16dp"
+            android:text="Bình  luận"
+            android:textAlignment="viewStart"
+            android:textColor="#040404"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/rvYouCanLike"
+            app:layout_constraintTop_toBottomOf="@+id/rvYouCanLike" />
+
+        <TextView
+            android:id="@+id/tvNameOfFood1"
+            android:layout_width="324dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Tên sản phẩm"
+            android:textAlignment="textStart"
+            android:textColor="#040404"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivFood" />
+
+        <ImageView
+            android:id="@+id/ivFood"
+            android:layout_width="416dp"
+            android:layout_height="201dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvComment"
+            android:layout_width="351dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/tvBtnAddToCart"
+            android:layout_width="249dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/my_apply_button"
+            android:gravity="center"
+            android:text="Thêm vào giỏ hàng"
+            android:textAlignment="center"
+            android:textColor="#FFFDFD"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.445"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDescription" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="338dp"
+            android:layout_height="156dp"
+            android:layout_marginTop="5dp"
+            android:text="Đây là đặc sản ngon nhất phú xuyên"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

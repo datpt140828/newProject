@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FoodSellAppProject</string>
+    <string name="tvLogin">Đăng Nhập</string>
+    <string name="btnLogin">Đăng Nhập</string>
+    <string name="tvNotHaveAccount">Bạn chưa có tài khoản ?</string>
+    <string name="tvSignup">Đăng ký</string>
+    <string name="chkRemember">Lưu tài khoản ?</string>
+    <string name="etLastnameFisrtname">Họ và tên</string>
+    <string name="etLoginName">Tên đăng nhập</string>
+    <string name="etPassword">Nhập mật khẩu</string>
+    <string name="etPassword2">Nhập lại mật khẩu</string>
+    <string name="title_home">Trang chủ</string>
+    <string name="title_cart">Giỏ hàng</string>
+    <string name="title_love">Yêu thích</string>
+    <string name="title_profile">Trang cá nhân</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

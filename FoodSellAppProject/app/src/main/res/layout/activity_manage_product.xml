@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/manageProductActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fbfafa"
+    tools:context=".controller.manage.ManageProductActivity">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="51dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="291dp"
+        android:layout_height="57dp"
+        android:gravity="center"
+        android:text="Quản lý sản phẩm"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivBack" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvOrdersByUserId"
+        android:layout_width="385dp"
+        android:layout_height="515dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/ivBack"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <Button
+        android:id="@+id/btnAddNewProduct"
+        android:layout_width="350dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/my_apply_button"
+        android:text="Thêm sản phẩm mới"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/rvOrdersByUserId"
+        app:layout_constraintStart_toStartOf="@+id/rvOrdersByUserId"
+        app:layout_constraintTop_toBottomOf="@+id/rvOrdersByUserId" />
+</androidx.constraintlayout.widget.ConstraintLayout>

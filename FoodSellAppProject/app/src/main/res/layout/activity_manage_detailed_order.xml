@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/manageDetailedOrderActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".controller.manage.ManageDetailedOrderActivity">
+
+    <TextView
+        android:id="@+id/tvOrderId"
+        android:layout_width="180dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:text="Mã đơn hàng"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ivBack1"
+        app:layout_constraintTop_toBottomOf="@+id/ivBack1" />
+
+    <TextView
+        android:id="@+id/tvDeliveredStatus"
+        android:layout_width="192dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:textAlignment="viewEnd"
+        android:textColor="#089F0E"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tvOrderId"
+        app:layout_constraintTop_toTopOf="@+id/tvOrderId" />
+
+    <TextView
+        android:id="@+id/tvCheckOutService"
+        android:layout_width="301dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:text="Chi tiết đơn hàng"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBack1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivBack1" />
+
+    <ImageView
+        android:id="@+id/ivBack1"
+        android:layout_width="49dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTotalOfBill"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="170dp"
+        android:text="40000 đ"
+        android:textColor="#F30000"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toTopOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:text="Tổng tiền"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@+id/tvPhone"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhone" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="370dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="16dp"
+        android:text="Phú xuyên hà nội"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@+id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:text="Tên"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/rvOrderDetail"
+        app:layout_constraintTop_toBottomOf="@+id/rvOrderDetail" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvOrderDetail"
+        android:layout_width="390dp"
+        android:layout_height="315dp"
+        android:layout_marginTop="8dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintEnd_toEndOf="@+id/tvCheckOutService"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvOrderId"
+        app:layout_constraintTop_toBottomOf="@+id/tvOrderTime"
+        app:spanCount="1" />
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="174dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:text="012345225"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/tvAddress"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddress" />
+
+    <TextView
+        android:id="@+id/tvOrderTime"
+        android:layout_width="185dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="8dp"
+        android:text="14/11/2020"
+        app:layout_constraintStart_toStartOf="@+id/tvOrderId"
+        app:layout_constraintTop_toBottomOf="@+id/tvOrderId" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

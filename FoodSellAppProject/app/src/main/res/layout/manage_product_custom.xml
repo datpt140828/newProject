@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    android:background="@drawable/cart_layer">
+
+    <ImageView
+        android:id="@+id/ivFood"
+        android:layout_width="127dp"
+        android:layout_height="142dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image10" />
+
+    <TextView
+        android:id="@+id/tvFoodName"
+        android:layout_width="133dp"
+        android:layout_height="24dp"
+        android:text="Dưa hấu trộn"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvCategoryName"
+        app:layout_constraintTop_toTopOf="@+id/ivFood" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="30000 đ"
+        android:textColor="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvCategoryName"
+        app:layout_constraintTop_toTopOf="@+id/tvCategoryName" />
+
+    <TextView
+        android:id="@+id/tvCategoryName"
+        android:layout_width="131dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Món tráng miệng"
+        app:layout_constraintStart_toEndOf="@+id/ivFood"
+        app:layout_constraintTop_toBottomOf="@+id/tvFoodName" />
+
+    <TextView
+        android:id="@+id/tvBtnViewDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_detail_button"
+        android:gravity="center"
+        android:text="Chi tiết"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ivFood"
+        app:layout_constraintStart_toStartOf="@+id/tvCategoryName" />
+
+    <TextView
+        android:id="@+id/tvBtnDelete"
+        android:layout_width="100dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/dagiaohang"
+        android:gravity="center"
+        android:text="Xóa"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvPrice"
+        app:layout_constraintStart_toEndOf="@+id/tvBtnViewDetail"
+        app:layout_constraintTop_toTopOf="@+id/tvBtnViewDetail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

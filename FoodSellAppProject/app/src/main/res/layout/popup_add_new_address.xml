@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/evaluateProductPopup"
+    android:layout_width="350dp"
+    android:layout_height="350dp"
+    android:layout_gravity="center"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="209dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="68dp"
+
+        android:gravity="center"
+        android:text="Thêm địa chỉ mới"
+        android:textColor="#040404"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etAgainNewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ten_sodienthoai"
+        android:ems="10"
+        android:hint="Số điện thoại"
+        android:inputType="number"
+        android:padding="4dp"
+        app:layout_constraintStart_toStartOf="@+id/etNewPassword"
+        app:layout_constraintTop_toBottomOf="@+id/etNewPassword" />
+
+    <EditText
+        android:id="@+id/etNewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/dia_chi_nhan"
+        android:ems="10"
+        android:gravity="clip_horizontal"
+        android:hint="Địa chỉ nhận"
+        android:inputType="textPersonName"
+        android:padding="4dp"
+        app:layout_constraintStart_toStartOf="@+id/etOldPassword"
+        app:layout_constraintTop_toBottomOf="@+id/etOldPassword" />
+
+    <EditText
+        android:id="@+id/etOldPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/ten_sodienthoai"
+        android:ems="10"
+        android:hint="Tên"
+        android:inputType="textPersonName"
+        android:padding="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/tvBtnCancel"
+        android:layout_width="111dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/dagiaohang"
+        android:gravity="center"
+        android:text="Hủy"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/etAgainNewPassword"
+        app:layout_constraintTop_toBottomOf="@+id/etAgainNewPassword" />
+
+    <TextView
+        android:id="@+id/tvBtnComment"
+        android:layout_width="111dp"
+        android:layout_height="36dp"
+        android:background="@drawable/dagiaohang"
+        android:gravity="center|clip_vertical"
+        android:text="Thêm mới"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/etAgainNewPassword"
+        app:layout_constraintTop_toTopOf="@+id/tvBtnCancel" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="170dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/cart_layer">
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="127dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Mã đơn hàng"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDeliveredStatus"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="Đã giao"
+        android:textAlignment="viewEnd"
+        android:textColor="#089F0E"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBtnDetail"
+        app:layout_constraintEnd_toEndOf="@+id/tvTotalOfBill"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tvBtnDetail"
+        app:layout_constraintTop_toTopOf="@+id/tvBtnDetail" />
+
+    <TextView
+        android:id="@+id/tvTotalOfBill"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginStart="5dp"
+        android:text="90000 đ"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView44"
+        app:layout_constraintTop_toTopOf="@+id/textView44" />
+
+    <TextView
+        android:id="@+id/tvOrderDate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="14/11/2020"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView36"
+        app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+    <TextView
+        android:id="@+id/tvOrderId"
+        android:layout_width="127dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:text="id"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView36"
+        app:layout_constraintTop_toTopOf="@+id/textView36" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:text="Tổng tiền:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintStart_toEndOf="@+id/tvOrderQuantity"
+        app:layout_constraintTop_toTopOf="@+id/tvOrderQuantity" />
+
+    <TextView
+        android:id="@+id/tvvvsaaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số lượng:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvOrderQuantity"
+        app:layout_constraintStart_toStartOf="@+id/tvOrderDate"
+        app:layout_constraintTop_toBottomOf="@+id/tvOrderDate" />
+
+    <TextView
+        android:id="@+id/tvOrderQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="3"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/tvvvsaaa"
+        app:layout_constraintTop_toTopOf="@+id/tvvvsaaa" />
+
+    <TextView
+        android:id="@+id/tvBtnDetail"
+        android:layout_width="127dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/my_food_category_button"
+        android:gravity="center"
+        android:text="Chi tiết"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvvvsaaa"
+        app:layout_constraintTop_toBottomOf="@+id/tvvvsaaa" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

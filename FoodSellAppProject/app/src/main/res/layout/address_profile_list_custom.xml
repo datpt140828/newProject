@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/cart_layer">
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="278dp"
+        android:layout_height="29dp"
+        android:text="Address"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@+id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="202dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Name"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="248dp"
+        android:layout_height="34dp"
+        android:text="SĐT"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@+id/tvAddress"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddress" />
+
+    <TextView
+        android:id="@+id/tvBtnModify"
+        android:layout_width="66dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="16dp"
+        android:text="Sửa"
+        android:textColor="#F10606"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvName"
+        app:layout_constraintTop_toTopOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvBtnViewDetail"
+        android:layout_width="66dp"
+        android:layout_height="41dp"
+        android:text="Xóa"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvBtnModify"
+        app:layout_constraintTop_toTopOf="@+id/tvPhone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

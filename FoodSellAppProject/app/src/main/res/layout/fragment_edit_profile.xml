@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editProfileFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ui.profile.EditProfileFragment">
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="dom@fpt.edu.vn"
+        app:layout_constraintStart_toStartOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    <EditText
+        android:id="@+id/etAgainNewPassword"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="01254123654"
+        app:layout_constraintStart_toStartOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="234dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:text="Email"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/etDob"
+        app:layout_constraintTop_toBottomOf="@+id/etDob" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="234dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:text="Số điện thoại"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/etDob"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="273dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:text="Thông tin cá nhân"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBack"
+        app:layout_constraintStart_toEndOf="@+id/ivBack"
+        app:layout_constraintTop_toTopOf="@+id/ivBack" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="230dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:text="Họ và tên đệm"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/ivBack"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/tvChangePassword"
+        android:layout_width="132dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="34dp"
+        android:text="Thay đổi"
+        android:textAlignment="viewEnd"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView29"
+        app:layout_constraintTop_toTopOf="@+id/textView29" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="120dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:text="Mật khẩu"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/etAgainNewPassword"
+        app:layout_constraintTop_toBottomOf="@+id/tvBtnSave" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="318dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="16dp"
+        android:text="Ngày sinh"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/etOldPassword"
+        app:layout_constraintTop_toBottomOf="@+id/etOldPassword" />
+
+    <TextView
+        android:id="@+id/tvBtnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="117dp"
+        android:background="@drawable/dagiaohang"
+        android:gravity="center"
+        android:text="Lưu"
+        android:textColor="#F3E9E9"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAgainNewPassword" />
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etOldPassword"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <EditText
+        android:id="@+id/etDob"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="10/01/1999"
+        app:layout_constraintStart_toStartOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:focusable="auto"
+        android:focusableInTouchMode="false"
+        android:inputType="textPassword"
+        android:text="abc123456"
+        app:layout_constraintStart_toStartOf="@+id/textView29"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+</androidx.constraintlayout.widget.ConstraintLayout>
